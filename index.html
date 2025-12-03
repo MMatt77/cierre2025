@@ -21,7 +21,7 @@
   a{color:var(--azul-2);text-decoration:none} a:hover{text-decoration:underline}
   section{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
   .hint{font-size:13px;color:var(--gris-2)}
-  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;justify-content:center}
   .pill{display:inline-block;background:#fff;border:1px solid var(--borde);padding:8px 12px;border-radius:999px;font-size:14px}
   .grid{display:grid;gap:14px;margin-top:10px}
   @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -33,7 +33,6 @@
   .callout{background:#fff9e8;border:1px solid #f1d48b;border-radius:12px;padding:12px}
   details{background:#f7fafc;border:1px dashed #cbd5e1;border-radius:12px;padding:10px 12px}
   details summary{cursor:pointer;font-weight:600}
-  pre{overflow:auto;background:#0b1220;color:#e6ecff;padding:12px;border-radius:10px}
   footer{margin-top:28px;text-align:center;color:var(--gris-2);font-size:13px}
   .tag{display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;border-radius:8px;padding:2px 8px;font-size:12px;margin-left:6px}
   .list-compact li+li{margin-top:6px}
@@ -42,61 +41,31 @@
 <body>
 <div class="wrap">
 
-  <!-- Portada -->
   <div class="center">
     <span class="badge">Encuesta de satisfacción · TUCEMD</span>
     <h1>La voz de nuestros estudiantes 2025</h1>
-    <p class="hint">Reconocimientos, evaluación institucional y focos de mejora prioritaria</p>
+    <p class="hint">Reconocimientos (datos reales), evaluación institucional y focos de mejora prioritaria</p>
     <div class="toc">
-      <a class="pill" href="#metodo">Metodología</a>
       <a class="pill" href="#comentarios">Comentarios por materia</a>
       <a class="pill" href="#sied">Evaluación SIED</a>
       <a class="pill" href="#estructura">Estructura mínima por unidad</a>
       <a class="pill" href="#interactividad">Rúbrica de interactividad</a>
-      <a class="pill" href="#recursos">Banco de recursos multimedia</a>
+      <a class="pill" href="#recursos">Banco de recursos</a>
       <a class="pill" href="#grupales">Trabajos grupales</a>
       <a class="pill" href="#proximos">Próximos pasos</a>
     </div>
   </div>
 
-  <!-- Metodología -->
-  <section id="metodo">
-    <h2>Metodología</h2>
-    <ul class="list-compact">
-      <li><strong>Fuente:</strong> comentarios textuales de la encuesta (escala 1–10).</li>
-      <li><strong>Filtro de consistencia:</strong> se excluyeron mensajes genéricos (p.ej., “gracias”, “todo bien”) o vacíos.</li>
-      <li><strong>Selección:</strong> se priorizó <em>claridad y concisión</em>. Cuando había múltiples aportes por materia, se eligieron los más informativos y breves.</li>
-      <li><strong>Transparencia:</strong> los textos se muestran tal cual, sin reescritura.</li>
-    </ul>
-  </section>
-
-  <!-- Comentarios por materia (reales, concisos) -->
   <section id="comentarios">
     <h2>Comentarios destacados por materia</h2>
-    <p class="hint">Se listan comentarios breves y significativos por cada materia con aportes consistentes.</p>
+    <p class="hint">Para cada materia se muestra el comentario real mejor valorado (priorizando nota “General” y concisión). Se excluyeron respuestas genéricas/agradecimientos.</p>
     <div class="grid">
-      <!-- AÑADÍ todas las materias con comentario válido. Si querés sumar más, duplicá cards -->
-      <article class="card"><h4>Comercio electrónico</h4><div class="bubble">“Muy buena la materia y la explicación de los docentes.”</div></article>
-      <article class="card"><h4>Diseño web y mobile</h4><div class="bubble">“Los contenidos fueron claros y actualizados.”</div></article>
-      <article class="card"><h4>Gestión del conocimiento</h4><div class="bubble">“Excelente propuesta, se aprende realmente aplicando.”</div></article>
-      <article class="card"><h4>Gestión de proyectos</h4><div class="bubble">“Los temas fueron útiles y aplicables en mi trabajo.”</div></article>
-      <article class="card"><h4>Gestores de contenido y plataformas web</h4><div class="bubble">“Materiales completos y fáciles de seguir.”</div></article>
-      <article class="card"><h4>Inglés</h4><div class="bubble">“Muy buena cursada; aprendí vocabulario técnico.”</div></article>
-      <article class="card"><h4>Introducción al Comercio Electrónico</h4><div class="bubble">“Excelente para entender las bases del e-commerce.”</div></article>
-      <article class="card"><h4>Logística, calidad y servicio al cliente digital</h4><div class="bubble">“Muy interesante todo lo visto.”</div></article>
-      <article class="card"><h4>Marco legal de los negocios digitales</h4><div class="bubble">“Contenidos actualizados y claros.”</div></article>
-      <article class="card"><h4>Marketing Estratégico y Comunicación Digital</h4><div class="bubble">“Clases claras con ejemplos actuales.”</div></article>
-      <article class="card"><h4>Métricas del mundo digital</h4><div class="bubble">“Materia muy completa.”</div></article>
-      <article class="card"><h4>Principios de Administración y Finanzas</h4><div class="bubble">“Excelente la profesora; muy clara.”</div></article>
-      <article class="card"><h4>Redes e infraestructura</h4><div class="bubble">“Muy buenos los ejemplos prácticos.”</div></article>
-      <article class="card"><h4>Seguridad y protección de datos</h4><div class="bubble">“Temas relevantes, explicados con claridad.”</div></article>
-      <article class="card"><h4>Tecnología y sociedad</h4><div class="bubble">“Propuestas muy interesantes para reflexionar.”</div></article>
-      <article class="card"><h4>Usabilidad, accesibilidad y tecnologías de apoyo</h4><div class="bubble">“Accesibilidad explicada con enfoque práctico.”</div></article>
+      <!-- tarjetas generadas desde el CSV: 1 por materia, comentario real -->
+      <!-- (Si querés múltiples por materia, avisame y lo extiendo) -->
+      {{CARDS}}
     </div>
-    <p class="hint">Si querés mostrar <em>más de un</em> comentario por materia, indicámelo y te genero una versión con varias “burbujas” por asignatura.</p>
   </section>
 
-  <!-- SIED -->
   <section id="sied">
     <h2>Evaluación SIED (Sistema Institucional de Educación a Distancia)</h2>
     <div class="kicker">Observaciones y recomendaciones</div>
@@ -108,89 +77,63 @@
     <div class="kicker" style="margin-top:10px;">Acciones institucionales</div>
     <ul class="list-compact">
       <li><strong>Guía de estilo institucional</strong> → <a href="https://mmatt77.github.io/pautas/" target="_blank" rel="noopener">ver pautas</a>.</li>
-      <li><strong>Estructura mínima por unidad</strong> como estándar obligatorio (ver siguiente sección).</li>
+      <li><strong>Estructura mínima por unidad</strong> como estándar común (ver siguiente sección).</li>
       <li><strong>Banco de recursos multimedia</strong> a nivel de carrera (ver sección “Banco de recursos”).</li>
     </ul>
-    <p class="hint">La evaluación SIED es bienal y orienta la mejora continua de la carrera.</p>
   </section>
 
-  <!-- Estructura mínima por unidad -->
   <section id="estructura">
     <h2>Estructura mínima por unidad <span class="tag">obligatoria</span></h2>
-    <p>Implementación estandarizada en todas las cátedras:</p>
     <ol>
       <li><strong>Acción de inicio</strong> (activación breve: consigna, disparador, mapa de la unidad).</li>
       <li><strong>Contenidos</strong> (recursos curados, breves y accesibles).</li>
       <li><strong>Práctica</strong> (actividad guiada con criterios claros).</li>
-      <li><strong>Verificación</strong> (chequeo de comprensión: quiz breve, checklist, mini-tarea).</li>
-      <li><strong>Cierre</strong> (síntesis + qué sigue).</li>
+      <li><strong>Verificación</strong> (quiz breve/checklist/mini-tarea de chequeo de comprensión).</li>
+      <li><strong>Cierre</strong> (síntesis + próximos pasos).</li>
     </ol>
-    <div class="callout">
-      <strong>Nota:</strong> mantener nomenclatura, portadas y criterios visibles desde el inicio de la unidad.
-    </div>
   </section>
 
-  <!-- Rúbrica base de interactividad -->
   <section id="interactividad">
     <h2>Rúbrica base de interactividad</h2>
-    <p>Para cada unidad, asegurar un mínimo de <strong>dos</strong> elementos activos:</p>
+    <p>Para cada unidad, asegurar un mínimo de <strong>dos</strong> evidencias activas:</p>
     <ul class="list-compact">
-      <li><strong>Actividades</strong> (foro con consigna sustantiva, quiz con retroalimentación, mini-proyecto guiado).</li>
+      <li><strong>Actividades</strong> (foro con consigna sustantiva, quiz con retro, mini-proyecto guiado).</li>
       <li><strong>Recursos interactivos</strong> (audio breve, video con preguntas, infografía navegable).</li>
       <li><strong>Accesibilidad</strong> (subtítulos, transcripción, descripciones alternativas).</li>
     </ul>
-    <div class="callout"><strong>Criterio de cumplimiento:</strong> 2+ evidencias activas por unidad, con retroalimentación clara.</div>
   </section>
 
-  <!-- Banco de recursos multimedia -->
   <section id="recursos">
-    <h2>Banco de recursos multimedia (a nivel de carrera)</h2>
-    <p>Construcción de un repositorio común de <em>audios, videos, plantillas gráficas y ejemplos interactivos</em>.</p>
+    <h2>Banco de recursos multimedia (nivel carrera)</h2>
     <ul class="list-compact">
-      <li><strong>Publicación:</strong> a través de la coordinación (canal institucional centralizado).</li>
-      <li><strong>Pedido docente:</strong> enviar solicitud a coordinación con: título, tipo de recurso, unidad/materia, breve descripción y derechos de uso.</li>
-      <li><strong>Criterios de calidad:</strong> duración breve, foco claro, accesibilidad mínima (subtítulos/transcripción).</li>
+      <li><strong>Publicación</strong> a través de coordinación (canal institucional centralizado).</li>
+      <li><strong>Solicitud docente</strong> con: título, tipo de recurso, unidad/materia, descripción breve y derechos de uso.</li>
+      <li><strong>Criterios</strong> de calidad: duración breve, foco claro, accesibilidad mínima (subtítulos/transcripción).</li>
     </ul>
-    <div class="callout">Objetivo: evitar dispersión, mejorar la calidad y acelerar el diseño didáctico.</div>
+    <div class="callout">Objetivo: evitar dispersión, mejorar calidad y acelerar el diseño didáctico.</div>
   </section>
 
-  <!-- Trabajos grupales -->
   <section id="grupales">
     <h2>Trabajos grupales: lineamientos y comunicación</h2>
     <p>Aplica <strong>solo</strong> a materias que contemplen trabajo grupal (por diseño o decisión de cátedra).</p>
     <h3>Lineamientos comunes</h3>
     <ul class="list-compact">
-      <li><strong>Pautas claras y visibles</strong>: objetivo, entregables, formato y <em>criterios</em> (grupal e individual).</li>
-      <li><strong>Opción individual</strong> en casos justificados; explicitar implicancias en carga y evaluación.</li>
+      <li><strong>Pautas claras y visibles</strong>: objetivo, entregables, formato y criterios (grupal e individual).</li>
+      <li><strong>Opción individual</strong> en casos justificados; explicitar implicancias.</li>
       <li><strong>Entrega individual en el aula</strong> (por cada estudiante): enlace/archivo + breve reflexión o aporte personal.</li>
       <li><strong>Verificación individual</strong>: autoevaluación, defensa breve o preguntas clave.</li>
-      <li><strong>Comunicación estandarizada</strong> en foro de novedades (ver modelo).</li>
+      <li><strong>Comunicación estandarizada</strong> en foro (modelo disponible en materiales comunes).</li>
     </ul>
-
-    <details>
-      <summary>Modelo de mensaje para foro (copiar/pegar)</summary>
-      <pre>&lt;h3&gt;Trabajo grupal – {Unidad/Tema}&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Objetivo:&lt;/strong&gt; {enunciado breve y medible}.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Grupos:&lt;/strong&gt; {tamaño y listado o criterio de conformación}.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Entregables:&lt;/strong&gt; {producto grupal} + &lt;em&gt;entrega individual obligatoria&lt;/em&gt; (enlace/archivo + reflexión breve).&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Criterios de evaluación:&lt;/strong&gt; {rubros y ponderación}.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fecha/hora límite:&lt;/strong&gt; {dd/mm - hh:mm}.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Opción individual:&lt;/strong&gt; disponible en casos justificados (leer implicancias).&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Soporte:&lt;/strong&gt; {canal de consultas}.&lt;/li&gt;
-&lt;/ul&gt;</pre>
-    </details>
   </section>
 
-  <!-- Próximos pasos -->
   <section id="proximos">
     <h2>Próximos pasos</h2>
     <ol>
       <li><strong>Adoptar la estructura mínima por unidad</strong> en todas las cátedras.</li>
       <li><strong>Aplicar la rúbrica de interactividad</strong> (2+ evidencias activas por unidad).</li>
       <li><strong>Unificar presentación</strong> (portadas, bloques, nomenclatura, criterios visibles).</li>
-      <li><strong>Solicitar/compartir materiales</strong> al banco de recursos mediante coordinación.</li>
-      <li><strong>Usar el modelo de foro</strong> cuando haya trabajo grupal e incorporar verificación individual.</li>
+      <li><strong>Canalizar materiales</strong> al banco de recursos vía coordinación.</li>
+      <li><strong>Usar comunicación estándar</strong> para trabajos grupales e incorporar verificación individual.</li>
     </ol>
   </section>
 
