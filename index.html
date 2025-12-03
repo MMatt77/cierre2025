@@ -6,138 +6,99 @@
 <title>La voz de nuestros estudiantes 2025 · TUCEMD</title>
 <style>
   :root{
-    --azul:#004C91; --azul-2:#0E6BA8; --gris:#E9EDF2; --gris-2:#6B7280; --negro:#111827; --blanco:#ffffff;
-    --borde:#dde3ea; --azul-soft:#edf6ff; --amarillo:#F1B434;
+    --azul:#004C91;
+    --azul-2:#0E6BA8;
+    --gris:#E9EDF2;
+    --gris-2:#6B7280;
+    --negro:#111827;
+    --blanco:#ffffff;
   }
-  html,body{margin:0;padding:0;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);color:var(--negro);
-            font-family:Inter,Roboto,Segoe UI,Arial,sans-serif}
+  html,body{margin:0;padding:0;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);
+    color:var(--negro);font-family:Inter,Roboto,Segoe UI,Arial,sans-serif}
   .wrap{max-width:1100px;margin:auto;padding:28px 20px 64px}
-  .center{text-align:center}
-  .badge{display:inline-block;background:var(--azul);color:#fff;padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.3px}
-  h1{font-size:clamp(28px,4vw,40px);margin:6px 0 4px;color:var(--azul)}
-  h2{color:var(--azul);margin:22px 0 12px}
-  h3{color:var(--azul-2);margin:16px 0 8px}
-  p{line-height:1.6;margin:8px 0}
-  a{color:var(--azul-2);text-decoration:none} a:hover{text-decoration:underline}
-  section{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
-  .hint{font-size:13px;color:var(--gris-2)}
-  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;justify-content:center}
-  .pill{display:inline-block;background:#fff;border:1px solid var(--borde);padding:8px 12px;border-radius:999px;font-size:14px}
+  header{display:flex;gap:20px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+  header img{height:80px;width:auto;object-fit:contain}
+  .titlegroup{display:flex;flex-direction:column}
+  h1{font-size:clamp(28px,4vw,40px);margin:2px 0;color:var(--azul)}
+  .badge{display:inline-block;background:var(--azul);color:var(--blanco);
+    padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.3px}
+  .lead{color:var(--gris-2);margin-top:4px}
+  h2{color:var(--azul);margin:18px 0 10px}
+  p{line-height:1.55}
+  section{background:var(--blanco);border:1px solid #dde3ea;border-radius:16px;
+    padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
   .grid{display:grid;gap:14px;margin-top:10px}
   @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
   .card{border:1px solid #e3e8ef;border-radius:14px;padding:14px;background:#fbfdff}
-  .card h4{margin:0 0 8px;color:var(--azul)}
-  .bubble{background:var(--azul-soft);border-left:4px solid var(--azul);padding:10px;border-radius:10px}
-  .kicker{font-weight:600;margin:8px 0}
-  .callout{background:#fff9e8;border:1px solid #f1d48b;border-radius:12px;padding:12px}
-  details{background:#f7fafc;border:1px dashed #cbd5e1;border-radius:12px;padding:10px 12px}
-  details summary{cursor:pointer;font-weight:600}
+  .card h3{margin:0 0 8px;color:var(--azul)}
+  .bubble{background:#edf6ff;border-left:4px solid var(--azul);
+    padding:10px;border-radius:10px;min-height:56px}
+  ul{margin:8px 0 0 20px}
+  li+li{margin-top:6px}
+  .kicker{font-weight:600;margin-bottom:8px}
+  .note{font-size:13px;color:var(--gris-2);margin-top:10px}
   footer{margin-top:28px;text-align:center;color:var(--gris-2);font-size:13px}
-  .tag{display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;border-radius:8px;padding:2px 8px;font-size:12px;margin-left:6px}
-  .list-compact li+li{margin-top:6px}
+  a{color:var(--azul-2);text-decoration:none}
+  a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
 <div class="wrap">
-
-  <div class="center">
-    <span class="badge">Encuesta de satisfacción · TUCEMD</span>
-    <h1>La voz de nuestros estudiantes 2025</h1>
-    <p class="hint">Reconocimientos (datos reales), evaluación institucional y focos de mejora prioritaria</p>
-    <div class="toc">
-      <a class="pill" href="#comentarios">Comentarios por materia</a>
-      <a class="pill" href="#sied">Evaluación SIED</a>
-      <a class="pill" href="#estructura">Estructura mínima por unidad</a>
-      <a class="pill" href="#interactividad">Rúbrica de interactividad</a>
-      <a class="pill" href="#recursos">Banco de recursos</a>
-      <a class="pill" href="#grupales">Trabajos grupales</a>
-      <a class="pill" href="#proximos">Próximos pasos</a>
+  <header>
+    <img src="logoutn2023gris.jpg" alt="UTN FRBA logo">
+    <div class="titlegroup">
+      <span class="badge">Encuesta de satisfacción · TUCEMD</span>
+      <h1>La voz de nuestros estudiantes 2025</h1>
+      <div class="lead">Reconocimientos, evaluación institucional y foco de mejora prioritaria</div>
     </div>
-  </div>
+  </header>
 
-  <section id="comentarios">
+  <section>
     <h2>Comentarios destacados por materia</h2>
-    <p class="hint">Para cada materia se muestra el comentario real mejor valorado (priorizando nota “General” y concisión). Se excluyeron respuestas genéricas/agradecimientos.</p>
     <div class="grid">
-      <!-- tarjetas generadas desde el CSV: 1 por materia, comentario real -->
-      <!-- (Si querés múltiples por materia, avisame y lo extiendo) -->
-      {{CARDS}}
+      <article class="card"><h3>Diseño web y mobile</h3><div class="bubble">“Excelentes docentes. Trabajos desafiantes y aplicables. Gran combinación entre teoría y práctica.”</div></article>
+      <article class="card"><h3>Gestión del conocimiento</h3><div class="bubble">“Profesionalismo y calidez. Se nota el compromiso en cada clase.”</div></article>
+      <article class="card"><h3>Marketing Estratégico y Comunicación Digital</h3><div class="bubble">“Clases inspiradoras; gran conexión del equipo con el grupo.”</div></article>
+      <article class="card"><h3>Inglés</h3><div class="bubble">“Clave para mi formación profesional. Contenidos claros y prácticos.”</div></article>
+      <article class="card"><h3>Usabilidad, accesibilidad y tecnologías de apoyo</h3><div class="bubble">“Clases interesantes y materiales claros con enfoque práctico.”</div></article>
     </div>
   </section>
 
-  <section id="sied">
+  <section>
     <h2>Evaluación SIED (Sistema Institucional de Educación a Distancia)</h2>
     <div class="kicker">Observaciones y recomendaciones</div>
-    <ul class="list-compact">
-      <li><strong>Uniformidad en la presentación:</strong> portadas, bloques, nomenclatura de actividades, criterios de evaluación.</li>
-      <li><strong>Más interactividad:</strong> actividades con retroalimentación y participación activa del estudiante.</li>
-      <li><strong>Multiformato con accesibilidad:</strong> texto, audio, video e infografías con subtítulos/transcripciones.</li>
+    <ul>
+      <li><strong>Uniformidad en la presentación</strong> de materias (portadas, bloques, nomenclatura, criterios de evaluación).</li>
+      <li><strong>Mayor interactividad</strong> en los recursos y actividades con retroalimentación.</li>
+      <li><strong>Integración de formatos</strong>: texto, audio, video, infografías y recursos accesibles.</li>
     </ul>
     <div class="kicker" style="margin-top:10px;">Acciones institucionales</div>
-    <ul class="list-compact">
-      <li><strong>Guía de estilo institucional</strong> → <a href="https://mmatt77.github.io/pautas/" target="_blank" rel="noopener">ver pautas</a>.</li>
-      <li><strong>Estructura mínima por unidad</strong> como estándar común (ver siguiente sección).</li>
-      <li><strong>Banco de recursos multimedia</strong> a nivel de carrera (ver sección “Banco de recursos”).</li>
+    <ul>
+      <li><strong>Guía de estilo institucional</strong> publicada → <a href="https://mmatt77.github.io/pautas/" target="_blank" rel="noopener">ver pautas</a>.</li>
+      <li><strong>Estructura mínima por unidad</strong> (acción de inicio → contenidos → práctica → verificación → cierre).</li>
+      <li><strong>Banco de recursos multimedia</strong> a construir a nivel de carrera (canal de YouTube institucional vía coordinación).</li>
     </ul>
   </section>
 
-  <section id="estructura">
-    <h2>Estructura mínima por unidad <span class="tag">obligatoria</span></h2>
-    <ol>
-      <li><strong>Acción de inicio</strong> (activación breve: consigna, disparador, mapa de la unidad).</li>
-      <li><strong>Contenidos</strong> (recursos curados, breves y accesibles).</li>
-      <li><strong>Práctica</strong> (actividad guiada con criterios claros).</li>
-      <li><strong>Verificación</strong> (quiz breve/checklist/mini-tarea de chequeo de comprensión).</li>
-      <li><strong>Cierre</strong> (síntesis + próximos pasos).</li>
-    </ol>
-  </section>
-
-  <section id="interactividad">
-    <h2>Rúbrica base de interactividad</h2>
-    <p>Para cada unidad, asegurar un mínimo de <strong>dos</strong> evidencias activas:</p>
-    <ul class="list-compact">
-      <li><strong>Actividades</strong> (foro con consigna sustantiva, quiz con retro, mini-proyecto guiado).</li>
-      <li><strong>Recursos interactivos</strong> (audio breve, video con preguntas, infografía navegable).</li>
-      <li><strong>Accesibilidad</strong> (subtítulos, transcripción, descripciones alternativas).</li>
+  <section>
+    <h2>Falencia detectada: trabajo grupal</h2>
+    <p>Las encuestas muestran dificultades en organización, comunicación y entrega. <strong>Estas pautas aplican solo a las materias que incluyan trabajo grupal</strong> por diseño curricular o decisión de cátedra.</p>
+    <ul>
+      <li><strong>Pautas claras y visibles</strong>: objetivo, criterios y requisitos de entrega (grupal e individual).</li>
+      <li><strong>Opción individual</strong> en casos justificados; explicitar implicancias en carga y evaluación.</li>
+      <li><strong>Entrega individual obligatoria</strong>: cada estudiante sube su archivo/enlace + breve reflexión/aporte personal.</li>
+      <li><strong>Compromiso y corresponsabilidad</strong>: quien no participó activamente difícilmente disponga del material para su entrega.</li>
+      <li><strong>Verificación individual</strong>: breves autoevaluaciones, defensa corta o preguntas clave.</li>
+      <li><strong>Comunicación en aula</strong>: post estándar en el foro con grupos, objetivos, formato de entrega, fechas y criterios.</li>
     </ul>
-  </section>
-
-  <section id="recursos">
-    <h2>Banco de recursos multimedia (nivel carrera)</h2>
-    <ul class="list-compact">
-      <li><strong>Publicación</strong> a través de coordinación (canal institucional centralizado).</li>
-      <li><strong>Solicitud docente</strong> con: título, tipo de recurso, unidad/materia, descripción breve y derechos de uso.</li>
-      <li><strong>Criterios</strong> de calidad: duración breve, foco claro, accesibilidad mínima (subtítulos/transcripción).</li>
-    </ul>
-    <div class="callout">Objetivo: evitar dispersión, mejorar calidad y acelerar el diseño didáctico.</div>
-  </section>
-
-  <section id="grupales">
-    <h2>Trabajos grupales: lineamientos y comunicación</h2>
-    <p>Aplica <strong>solo</strong> a materias que contemplen trabajo grupal (por diseño o decisión de cátedra).</p>
-    <h3>Lineamientos comunes</h3>
-    <ul class="list-compact">
-      <li><strong>Pautas claras y visibles</strong>: objetivo, entregables, formato y criterios (grupal e individual).</li>
-      <li><strong>Opción individual</strong> en casos justificados; explicitar implicancias.</li>
-      <li><strong>Entrega individual en el aula</strong> (por cada estudiante): enlace/archivo + breve reflexión o aporte personal.</li>
-      <li><strong>Verificación individual</strong>: autoevaluación, defensa breve o preguntas clave.</li>
-      <li><strong>Comunicación estandarizada</strong> en foro (modelo disponible en materiales comunes).</li>
-    </ul>
-  </section>
-
-  <section id="proximos">
-    <h2>Próximos pasos</h2>
-    <ol>
-      <li><strong>Adoptar la estructura mínima por unidad</strong> en todas las cátedras.</li>
-      <li><strong>Aplicar la rúbrica de interactividad</strong> (2+ evidencias activas por unidad).</li>
-      <li><strong>Unificar presentación</strong> (portadas, bloques, nomenclatura, criterios visibles).</li>
-      <li><strong>Canalizar materiales</strong> al banco de recursos vía coordinación.</li>
-      <li><strong>Usar comunicación estándar</strong> para trabajos grupales e incorporar verificación individual.</li>
-    </ol>
   </section>
 
   <footer>© 2025 · Tecnicatura Universitaria en Comercio Electrónico y Marketing Digital · UTN FRBA · Centro de e-Learning</footer>
 </div>
 </body>
 </html>
+
+</body>
+</html>
+
