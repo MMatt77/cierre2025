@@ -6,91 +6,149 @@
 <title>La voz de nuestros estudiantes 2025 · TUCEMD</title>
 <style>
   :root{
-    --azul:#004C91;
-    --azul-2:#0E6BA8;
-    --gris:#E9EDF2;
-    --gris-2:#6B7280;
-    --negro:#111827;
+    --azul:#004C91; 
+    --azul-2:#0E6BA8; 
+    --gris:#E9EDF2; 
+    --gris-2:#6B7280; 
+    --negro:#111827; 
     --blanco:#ffffff;
   }
-  html,body{margin:0;padding:0;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);
-    color:var(--negro);font-family:Inter,Roboto,Segoe UI,Arial,sans-serif}
-  .wrap{max-width:1100px;margin:auto;padding:28px 20px 64px}
-  header{display:flex;gap:20px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
-  header img{height:80px;width:auto;object-fit:contain}
-  .titlegroup{display:flex;flex-direction:column}
-  h1{font-size:clamp(28px,4vw,40px);margin:2px 0;color:var(--azul)}
-  .badge{display:inline-block;background:var(--azul);color:var(--blanco);
-    padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.3px}
-  .lead{color:var(--gris-2);margin-top:4px}
-  h2{color:var(--azul);margin:18px 0 10px}
-  p{line-height:1.55}
-  section{background:var(--blanco);border:1px solid #dde3ea;border-radius:16px;
-    padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
-  .grid{display:grid;gap:14px;margin-top:10px}
+  html,body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);
+    color:var(--negro);
+    font-family:Inter,Roboto,Segoe UI,Arial,sans-serif;
+  }
+  .wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:28px 20px 64px;
+  }
+  h1{
+    font-size:clamp(28px,4vw,40px);
+    margin:2px 0;
+    color:var(--azul);
+    text-align:center;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--azul);
+    color:#fff;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:12px;
+    letter-spacing:.3px;
+  }
+  h2{
+    color:var(--azul);
+    margin:18px 0 10px;
+  }
+  section{
+    background:#fff;
+    border:1px solid #dde3ea;
+    border-radius:16px;
+    padding:18px;
+    margin-top:16px;
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+  }
+  .grid{
+    display:grid;
+    gap:14px;
+    margin-top:10px;
+  }
   @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
-  .card{border:1px solid #e3e8ef;border-radius:14px;padding:14px;background:#fbfdff}
-  .card h3{margin:0 0 8px;color:var(--azul)}
-  .bubble{background:#edf6ff;border-left:4px solid var(--azul);
-    padding:10px;border-radius:10px;min-height:56px}
-  ul{margin:8px 0 0 20px}
-  li+li{margin-top:6px}
-  .kicker{font-weight:600;margin-bottom:8px}
-  .note{font-size:13px;color:var(--gris-2);margin-top:10px}
-  footer{margin-top:28px;text-align:center;color:var(--gris-2);font-size:13px}
-  a{color:var(--azul-2);text-decoration:none}
-  a:hover{text-decoration:underline}
+  .card{
+    border:1px solid #e3e8ef;
+    border-radius:14px;
+    padding:14px;
+    background:#fbfdff;
+  }
+  .card h3{
+    margin:0 0 8px;
+    color:var(--azul);
+  }
+  .bubble{
+    background:#edf6ff;
+    border-left:4px solid var(--azul);
+    padding:10px;
+    border-radius:10px;
+    min-height:56px;
+  }
+  ul{
+    margin:8px 0 0 20px;
+  }
+  li+li{
+    margin-top:6px;
+  }
+  footer{
+    margin-top:28px;
+    text-align:center;
+    color:var(--gris-2);
+    font-size:13px;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <img src="logoutn2023gris.jpg" alt="UTN FRBA logo">
-    <div class="titlegroup">
-      <span class="badge">Encuesta de satisfacción · TUCEMD</span>
-      <h1>La voz de nuestros estudiantes 2025</h1>
-      <div class="lead">Reconocimientos, evaluación institucional y foco de mejora prioritaria</div>
-    </div>
-  </header>
+
+  <div style="text-align:center;">
+    <span class="badge">Encuesta de satisfacción · TUCEMD</span>
+    <h1>La voz de nuestros estudiantes 2025</h1>
+    <p style="color:#6b7280;">Reconocimientos, evaluación institucional y foco de mejora prioritaria</p>
+  </div>
 
   <section>
     <h2>Comentarios destacados por materia</h2>
     <div class="grid">
-      <article class="card"><h3>Diseño web y mobile</h3><div class="bubble">“Excelentes docentes. Trabajos desafiantes y aplicables. Gran combinación entre teoría y práctica.”</div></article>
-      <article class="card"><h3>Gestión del conocimiento</h3><div class="bubble">“Profesionalismo y calidez. Se nota el compromiso en cada clase.”</div></article>
-      <article class="card"><h3>Marketing Estratégico y Comunicación Digital</h3><div class="bubble">“Clases inspiradoras; gran conexión del equipo con el grupo.”</div></article>
-      <article class="card"><h3>Inglés</h3><div class="bubble">“Clave para mi formación profesional. Contenidos claros y prácticos.”</div></article>
-      <article class="card"><h3>Usabilidad, accesibilidad y tecnologías de apoyo</h3><div class="bubble">“Clases interesantes y materiales claros con enfoque práctico.”</div></article>
+      <article class="card"><h3>Comercio electrónico</h3><div class="bubble">“Muy buena la materia y la explicación de los docentes.”</div></article>
+      <article class="card"><h3>Diseño web y mobile</h3><div class="bubble">“Los contenidos fueron claros y actualizados.”</div></article>
+      <article class="card"><h3>Gestión del conocimiento</h3><div class="bubble">“Excelente propuesta, se aprende realmente aplicando.”</div></article>
+      <article class="card"><h3>Gestión de proyectos</h3><div class="bubble">“Los temas fueron útiles y aplicables en mi trabajo.”</div></article>
+      <article class="card"><h3>Gestores de contenido y plataformas web</h3><div class="bubble">“Los materiales fueron completos y fáciles de seguir.”</div></article>
+      <article class="card"><h3>Inglés</h3><div class="bubble">“Muy buena cursada, aprendí vocabulario técnico.”</div></article>
+      <article class="card"><h3>Introducción al Comercio Electrónico</h3><div class="bubble">“Excelente materia para entender las bases del e-commerce.”</div></article>
+      <article class="card"><h3>Logística, calidad y servicio al cliente digital</h3><div class="bubble">“Muy interesante todo lo visto.”</div></article>
+      <article class="card"><h3>Marco legal de los negocios digitales</h3><div class="bubble">“Muy buena materia, contenidos actualizados.”</div></article>
+      <article class="card"><h3>Marketing Estratégico y Comunicación Digital</h3><div class="bubble">“Clases claras, con ejemplos actuales.”</div></article>
+      <article class="card"><h3>Métricas del mundo digital</h3><div class="bubble">“Muy completa la materia.”</div></article>
+      <article class="card"><h3>Principios de Administración y Finanzas</h3><div class="bubble">“Excelente la profesora, muy clara.”</div></article>
+      <article class="card"><h3>Redes e infraestructura</h3><div class="bubble">“Muy buenos los ejemplos prácticos.”</div></article>
+      <article class="card"><h3>Seguridad y protección de datos</h3><div class="bubble">“Temas relevantes y explicados con claridad.”</div></article>
+      <article class="card"><h3>Tecnología y sociedad</h3><div class="bubble">“Propuestas muy interesantes para reflexionar.”</div></article>
+      <article class="card"><h3>Usabilidad, accesibilidad y tecnologías de apoyo</h3><div class="bubble">“Me gustó mucho cómo se explicó la accesibilidad.”</div></article>
     </div>
   </section>
 
   <section>
     <h2>Evaluación SIED (Sistema Institucional de Educación a Distancia)</h2>
-    <div class="kicker">Observaciones y recomendaciones</div>
     <ul>
-      <li><strong>Uniformidad en la presentación</strong> de materias (portadas, bloques, nomenclatura, criterios de evaluación).</li>
+      <li><strong>Uniformidad en la presentación</strong> de materias (portadas, bloques, criterios de evaluación).</li>
       <li><strong>Mayor interactividad</strong> en los recursos y actividades con retroalimentación.</li>
       <li><strong>Integración de formatos</strong>: texto, audio, video, infografías y recursos accesibles.</li>
     </ul>
-    <div class="kicker" style="margin-top:10px;">Acciones institucionales</div>
+    <h3 style="color:#0E6BA8;margin-top:20px;">Acciones institucionales</h3>
     <ul>
-      <li><strong>Guía de estilo institucional</strong> publicada → <a href="https://mmatt77.github.io/pautas/" target="_blank" rel="noopener">ver pautas</a>.</li>
+      <li><strong>Guía de estilo institucional</strong> publicada → 
+        <a href="https://mmatt77.github.io/pautas/" target="_blank" rel="noopener" style="color:#0E6BA8;">ver pautas</a>.
+      </li>
       <li><strong>Estructura mínima por unidad</strong> (acción de inicio → contenidos → práctica → verificación → cierre).</li>
-      <li><strong>Banco de recursos multimedia</strong> a construir a nivel de carrera (canal de YouTube institucional vía coordinación).</li>
+      <li><strong>Banco de recursos multimedia</strong> a construir a nivel de carrera (canal institucional vía coordinación).</li>
     </ul>
   </section>
 
   <section>
     <h2>Falencia detectada: trabajo grupal</h2>
-    <p>Las encuestas muestran dificultades en organización, comunicación y entrega. <strong>Estas pautas aplican solo a las materias que incluyan trabajo grupal</strong> por diseño curricular o decisión de cátedra.</p>
+    <p>Las encuestas muestran dificultades en organización, comunicación y entrega. 
+      <strong>Estas pautas aplican solo a las materias que incluyan trabajo grupal</strong> 
+      por diseño curricular o decisión de cátedra.</p>
     <ul>
-      <li><strong>Pautas claras y visibles</strong>: objetivo, criterios y requisitos de entrega (grupal e individual).</li>
-      <li><strong>Opción individual</strong> en casos justificados; explicitar implicancias en carga y evaluación.</li>
-      <li><strong>Entrega individual obligatoria</strong>: cada estudiante sube su archivo/enlace + breve reflexión/aporte personal.</li>
-      <li><strong>Compromiso y corresponsabilidad</strong>: quien no participó activamente difícilmente disponga del material para su entrega.</li>
-      <li><strong>Verificación individual</strong>: breves autoevaluaciones, defensa corta o preguntas clave.</li>
-      <li><strong>Comunicación en aula</strong>: post estándar en el foro con grupos, objetivos, formato de entrega, fechas y criterios.</li>
+      <li>Pautas claras (objetivo, criterios y requisitos de entrega grupal e individual).</li>
+      <li>Opción individual justificada, con implicancias explicitadas.</li>
+      <li>Entrega individual obligatoria: cada estudiante sube su trabajo o aporte personal.</li>
+      <li>Verificación individual: autoevaluación, defensa breve o preguntas clave.</li>
+      <li>Comunicación estandarizada en foro: grupos, objetivos, fechas, criterios.</li>
     </ul>
   </section>
 
